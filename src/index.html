@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Geometric Figures</title>
+</head>
+
+<body>
+    <header class="title">
+        <h1>Geometric figures</h1>
+    </header>
+    <main>
+
+        <section class="square">
+            <form action="/">
+                <h2>Square</h2>
+                <div>
+                    <label for="sidebox">Perimeter square</label>
+                    <input type="text" name="sidebox" id="sidebox">
+                    <span class="measure">cms</span>
+                </div>
+                <button type="button" onclick="calculatePerimeterBox()">Calculate perimeter</button>
+                <button type="button" onclick="calculateAreaBox()">Calculate area</button>
+                <button type="button" onclick="cleanSquare()">Limpiar</button>
+            </form>
+        </section>
+        <section class="triangle">
+            <form action="/">
+                <h2>Triangle</h2>
+                <div>
+                    <label for="base">Triangle base</label>
+                    <input type="text" name="base" id="base">
+                    <span class="measure">cms</span>
+                </div>
+                <div>
+                    <label for="base">Triangle side</label>
+                    <input type="text" name="sideTriangle" id="sideTriangle">
+                    <span class="measure">cms</span>
+                </div>
+                <button type="button" onclick="calculatePerimeterTriangle()">Calculate perimeter</button>
+                <button type="button" onclick="calculateAreaTriangle()">Calculate area</button>
+                <button type="button" onclick="cleanTriangle()">Limpiar</button>
+
+            </form>
+        </section>
+        <section class="circle">
+            <form action="/">
+                <h2>Circle</h2>
+                <div>
+                    <label for="base">Circle ratio</label>
+                    <input type="text" name="radio" id="radio">
+                    <span class="measure">cms</span>
+                </div>
+                <button type="button" onclick="calculatePerimeterCircle()">Calculate perimeter</button>
+                <button type="button" onclick="calculateAreaCircle()">Calculate area</button>
+                <button type="button" onclick="cleanCircle()">Limpiar</button>
+
+            </form>
+        </section>
+
+        <section id="response" class="response">
+            <div>
+                <p>Your response is</p>
+                <div class="response-info">
+                    <img src="./images/geometric-shape.png" alt="Geomeric shapes">
+                    <p id="response-value"></p>
+                </div>
+            </div>
+            <button id="accept" class="accept" onclick="hideResponse()">Accept</button>
+        </section>
+    </main>
+</body>
+
+</html>
