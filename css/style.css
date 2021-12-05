@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: darkviolet;
+}
+
+header {
+    margin: 40px 40px;
+}
+
+.title h1 {
+    color: ghostwhite;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    width: 290px;
+    height: 500px;
+    border: 3px solid black;
+    background: coral;
+    margin: 24px 24px 24px 24px;
+    border-radius: 8px;
+}
+
+form > h2 {
+    text-align: center;
+    color: white;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+input,
+button {
+    width: 95%;
+    margin-top: 20px;
+    height: 36px;
+}
+
+button {
+    background: forestgreen;
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgb(139, 202, 139);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+label {
+    position: relative;
+    color: whitesmoke;
+    font-weight: bold;
+    top: 20px;
+}
+
+label::after {
+    content: ":";
+}
+
+input {
+    font-size: 18px;
+    text-align: right;
+    padding-right: 40px;
+    border-radius: 8px;
+}
+
+div {
+    position: relative;
+    margin-left: auto;
+    width: 95%;
+}
+
+.measure {
+    position: absolute;
+    font-size: 18px;
+    color: darkgrey;
+    right: 24px;
+    top: 48px;
+}
+
+.response {
+    display: none;
+    position: absolute;
+    background: whitesmoke;
+    height: 250px;
+    width: 350px;
+    top: 200px;
+}
+
+.response p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.response p:nth-child(1){
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.response-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.response-info img {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.response-info p {
+    align-self: center;
+    margin-right: 50px;
+    font-size: 32px;
+}
+
+.accept {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+@media (max-width: 1130px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        width: 70%;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        width: 90%;
+    }
+}
